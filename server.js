@@ -24,6 +24,11 @@ mongoose.connect(process.env.MONGO_URI,
 
 
 app.use("/user", userRoute);
+
+
+
+
+
 const PORT = process.env.PORT || 7000;
 
 
