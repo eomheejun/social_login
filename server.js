@@ -12,6 +12,7 @@ app.use(morgan('dev'));
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended:false}));
 
+mongoose.Promise = global.Promise;
 
 mongoose.connect(process.env.MONGO_URI, 
     {
